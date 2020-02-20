@@ -958,9 +958,9 @@ GameStore.Categories = {
 		}, 
 -- Mounts
 	{	
-	description = "Buy your character one or more of the fabolous Mountsoffered here.",
+	description = "Buy your character one or more of the fabolous Mounts offered here.",
 	icons = { "Category_Mounts.png" },
-	name = "Mounts",
+	name = "Mounts I",
 	offers = {
 		{
 			description = "- only usable by purchasing character\n- provides character with a speed boost\n\nThe Arctic Unicorn lives in a deep rivalry with its cousin the Blazing Unicorn. Even though they were born in completely different areas, they somehow share the same bloodline. The eternal battle between fire and ice continues. Who will win? Tangerine vs.crystal blue! The choice is yours!",
@@ -1329,7 +1329,17 @@ GameStore.Categories = {
 			price = 870,
 			id = 127,
 			type = GameStore.OfferTypes.OFFER_TYPE_MOUNT,
+		} 
 		},
+			rookgaard = true,
+			state = GameStore.States.STATE_NONE,
+		}, 
+-- Mounts II
+	{	
+	description = "Buy your character one or more of the fabolous Mounts offered here.",
+	icons = { "Category_Mounts.png" },
+	name = "Mounts II",
+	offers = {
 		{
 			description = "- only usable by purchasing character\n- provides character with a speed boost\n\nTo the keen observer, the crocovile is clearly a relative of the crocodile, albeit their look suggests an even more aggressive nature. While it is true that the power of its massive and muscular body can not only crush enemies dead but also break through any gate like a battering ram, a crocovile is, above all, a steadfast companion showing unwavering loyalty to its owner.",
 			icons = { "Swamp_Crocovile.png" },
@@ -2091,7 +2101,7 @@ GameStore.Categories = {
 	{
 	description = "Buy exceptional equipment to upgrade your Tibia House",
 	icons = { "Category_HouseTools.png" },
-	name = "Houses",
+	name = "Houses Decorations I",
 	offers = { 
 -- Decorations
 		{
@@ -2497,8 +2507,19 @@ GameStore.Categories = {
 			price = 50,
 			id = 35041,
 			description = "- can only be unwrapped in a house owned by the purchasing character\n- comes in a box which can only be unwrapped by purchasing character\n- will be sent to your Store inbox and can only be stored there and in depot box\n- use it to trigger an animation\n- will be wrapped back and sent to inbox if the purchasing character is no longer the house owner",
-			type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
-		},							
+			type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,	
+		}
+		},
+			rookgaard = true,
+			state = GameStore.States.STATE_NONE,
+		}, 
+-- House items
+	{
+	description = "Buy exceptional equipment to upgrade your Tibia House",
+	icons = { "Category_HouseTools.png" },
+	name = "Houses Decorations II",
+	offers = { 
+-- Decorations		
 		{
 			count = 1,
 			icons = { "Festive_Sleigh.png" },
@@ -2895,7 +2916,18 @@ GameStore.Categories = {
 			id = 36768,
 			description = "- can only be unwrapped in a house owned by the purchasing character\n- comes in a box which can only be unwrapped by purchasing character\n- will be sent to your Store inbox and can only be stored there and in depot box\n- use it to trigger an animation\n- will be wrapped back and sent to inbox if the purchasing character is no longer the house owner",
 			type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+		}
 		},
+			rookgaard = true,
+			state = GameStore.States.STATE_NONE,
+		}, 
+-- House items
+	{
+	description = "Buy exceptional equipment to upgrade your Tibia House",
+	icons = { "Category_HouseTools.png" },
+	name = "Houses Decorations III",
+	offers = { 
+-- Decorations
 		{
 			count = 1,
 			icons = { "Pirate_Skeleton_Cage.png" },
@@ -3176,9 +3208,17 @@ GameStore.Categories = {
 			name = "Yellow Roses",
 			price = 50,
 			id = 27896,
-			description = "- can only be unwrapped in a house owned by the purchasing character\n- comes in a box which can only be unwrapped by purchasing character\n- will be sent to your Store inbox and can only be stored there and in depot box\n- use it to trigger an animation\n- will be wrapped back and sent to inbox if the purchasing character is no longer the house owner",
-			type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
-		},										
+			description = "- can only be unwrapped in a house owned by the purchasing character\n- comes in a box which can only be unwrapped by purchasing character\n- will be sent to your Store inbox and can only be stored there and in depot box\n- use it to trigger an animation\n- will be wrapped back and sent to inbox if the purchasing character is no longer the house owner",	
+		}
+		},
+			rookgaard = true,
+			state = GameStore.States.STATE_NONE,
+		}, 
+	{
+	description = "Buy exceptional equipment to upgrade your Tibia House",
+	icons = { "Category_HouseTools.png" },
+	name = "Houses Furnitures",
+	offers = { 		
 -- Furniture										
 		{
 			icons = { "Alchemistic_Cabinet.png" },
@@ -3593,7 +3633,17 @@ GameStore.Categories = {
 			id = 36029,
 			description = "- can only be unwrapped in a house owned by the purchasing character\n- comes in a box which can only be unwrapped by purchasing character\n- will be sent to your Store inbox and can only be stored there and in depot box\n- use it to trigger an animation\n- will be wrapped back and sent to inbox if the purchasing character is no longer the house owner",
 			type = GameStore.OfferTypes.OFFER_TYPE_HOUSE,
+		}
 		},
+			rookgaard = true,
+			state = GameStore.States.STATE_NONE,
+		}, 
+-- House items
+	{
+	description = "Buy exceptional equipment to upgrade your Tibia House",
+	icons = { "Category_HouseTools.png" },
+	name = "Houses Upgrades",
+	offers = { 
 -- Upgrades											
 		{
 			count = 1,
