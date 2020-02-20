@@ -3106,7 +3106,7 @@ std::map<uint16_t, uint16_t> Player::getInventoryClientIds() const
 				}
 				itemMap.emplace((*it)->getClientID(), Item::countByType(*it, -1));
 				const ItemType& itItemType = Item::items[(*it)->getID()];
-
+				
 				if (itItemType.transformEquipTo) {
 					itemMap.emplace(Item::items[itItemType.transformEquipTo].clientId, 1);
 				}
@@ -3162,7 +3162,7 @@ void Player::postAddNotification(Thing* thing, const Cylinder* oldParent, int32_
 		}
 
 		if (shopOwner && requireListUpdate) {
-			updateSaleShopList(item);
+						updateSaleShopList(item);
 		}
 	} else if (const Creature* creature = thing->getCreature()) {
 		if (creature == this) {
@@ -4841,6 +4841,23 @@ void Player::setGuild(Guild* newGuild)
 	}
 }
 
+//Autoloot
+void Player::addAutoLootItem(uint16_t itemId)
+{
+	autoLootList.insert(itemId);
+}
+
+void Player::removeAutoLootItem(uint16_t itemId)
+{
+	autoLootList.erase(itemId);
+}
+
+bool Player::getAutoLootItem(const uint16_t itemId)
+{
+	return autoLootList.find(itemId) != autoLootList.end();
+}
+
+//Custom: Anti bug do market
 //Custom: Anti bug of market
 bool Player::isMarketExhausted() const {
 	uint32_t exhaust_time = 3000; // half second 500
